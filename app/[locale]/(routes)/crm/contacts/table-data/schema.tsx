@@ -13,6 +13,7 @@ export const opportunitySchema = z.object({
   mobile_phone: z.string().nullable(),
   website: z.string().nullable(),
   position: z.string().nullable(),
+  role: z.string().nullable(), // Added role field
   status: z.boolean(),
   type: z.string().nullable(),
 });
