@@ -71,6 +71,8 @@ export async function POST(req: Request) {
         office_phone,
         mobile_phone,
         website,
+        position,
+        role,
         status,
         social_twitter,
         social_facebook,

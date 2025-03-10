@@ -121,6 +121,16 @@ export const columns: ColumnDef<Opportunity>[] = [
     enableHiding: true,
   },
   {
+    accessorKey: "role",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Role" />
+    ),
+
+    cell: ({ row }) => <div className="">{row.getValue("role") || "N/A"}</div>,
+    enableSorting: true,
+    enableHiding: true,
+  },
+  {
     accessorKey: "status",
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Status" />
